@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital@1&display=swap');
+
+/* BARRA DE IDIOMA  */
+
+.en {
+    width: 60px;
+    border-radius: 10px;
+}
+
+.es {
+    width: 60px;
+}
+
+.check {
+    position: relative;
+    width: 50px;
+}
+
+.check:before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    background: black;
+    border-radius: 25px;
+}
+
+.check:after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: white;
+    border-radius: 25px;
+    transition: 0.25s;
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+
+.check:checked:after {
+    left: 25px;
+    border: 2px solid black;
+}
+
+.check:checked:before {
+    background: rgb(0, 183, 255);
+}
+
+body {
+    margin: 0;
+    font-family: 'Alegreya', serif;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* DISEÑADAS POR JEANPAUL (JP)*/
+
+.titulo {
+    text-align: center;
+    padding-top: 20%;
+    color: white;
+    padding-left: 15%;
+}
+
+.g2 {
+    width: 15%;
+    padding-top: 10%;
+    padding-right: 10%;
+}
+
+.camb-idioma {
+    background: black;
+}
+
+.entremedio {
+    text-align: center;
+    font-size: 25px;
+    background-image: url(../img/fonfo-medio.jpg);
+    background-size: cover;
+    color: white;
+    padding: 0;
+}
+
+.mapa {
+    width: 80%;
+    height: 40vh;
+}
+
+.fondo {
+    background-image: url(../img/fondo.jpeg);
+    background-size: cover;
+    padding-bottom: 35%;
+}
+
+.fondo-estudios {
+    background-image: url(../img/fondo-prueba.png);
+    width: 100%;
+    background-size: cover;
+    padding: 0;
+}
+
+.letra-blanca {
+    color: white;
+    padding-left: 2%;
+}
+
+.fondo-negro {
+    background: black;
+}
+
+.pdf {
+    padding: 15px;
+    border-radius: 90px;
+    color: white;
+}
+
+.padding-left1 {
+    padding-left: 80%;
+}
+
+.padding-left2 {
+    padding-left: 15%;
+}
+
+.video {
+    padding-top: 2%;
+    padding-bottom: 1%;
+    padding-left: 13%;
+}
+
+p {
+    padding-left: 2%;
+    font-size: 20px;
+}
+
+.exp {
+    padding-left: 2%;
+}
+
+
+/* Diseño de columnas */
+
+.column-1 {
+    width: 100%;
+    float: left;
+}
+
+.column-2 {
+    width: 50%;
+    float: left;
+}
+
+.column-3 {
+    width: 33.33%;
+    float: left;
+}
+
+.column-4 {
+    width: 25%;
+    float: left;
+}
+
+.column-5 {
+    width: 20%;
+    float: left;
+}
+
+.column-6 {
+    width: 16.66%;
+    float: left;
+}
+
+.column-75 {
+    width: 75%;
+    float: left;
+}
+
+footer {
+    background: black;
+    padding: 8px;
+    color: white;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Otras clases */
+
+
+/* clase para centrar contenido en horizontal y vertical (lo centra respecto al elemento padre) */
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+    /* column-2 pasará de tener 50% a 100% */
+    .column-2 {
+        width: 100%;
+    }
+    /* column-3 pasará de tener 33.33% a 100% */
+    .column-3 {
+        width: 100%;
+    }
+    /* column-4 pasará de tener 25% a 50% */
+    .column-4 {
+        width: 50%;
+    }
+}
+
+
+/* barra */
+
+ :root {
+    --border-fondo1: 20px solid rgb(34, 231, 34, .3);
+    --border-fondo2: 20px solid rgba(206, 11, 11, 0.3);
+    --border-fondo3: 20px solid rgba(20, 175, 236, 0.3);
+    --border1: 20px solid rgb(10, 214, 10);
+    --border2: 20px solid rgb(204, 10, 4);
+    --border3: 20px solid rgb(20, 175, 236);
+}
+
+.contenedor {
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+    margin: 10px 30px;
+}
+
+.contenedor .progreso {
+    margin: 130px auto;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    /*border-left: var(--border3);
+        border-right: var(--border3);
+        border-top: var(--border3);
+        border-bottom: 25px solid transparent;*/
+    position: relative;
+    color: #fff;
+    text-align: center;
+}
+
+.contenedor .pro-1 {
+    border: var(--border-fondo1);
+    color: rgb(10, 214, 10);
+}
+
+.contenedor .pro-2 {
+    border: var(--border-fondo2);
+    color: rgb(204, 10, 4);
+}
+
+.contenedor .pro-3 {
+    border: var(--border-fondo3);
+    color: rgb(20, 175, 236);
+}
+
+.progreso h1 {
+    font-family: sans-serif;
+    margin-bottom: -37px;
+}
+
+.progreso h1,
+h2 {
+    margin-top: 40px;
+}
+
+.progreso h2 {
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.progreso .circle {
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    transform: rotate(-135deg);
+}
+
+.circle1 {
+    border-top: var(--border1);
+    border-left: var(--border1);
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    animation: rotar1 1s linear forwards;
+    animation-delay: 1s;
+}
+
+.circle2 {
+    border-top: var(--border2);
+    border-left: var(--border2);
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    animation: rotar2 1s linear forwards;
+    animation-delay: 2s;
+}
+
+.circle3 {
+    border-top: var(--border3);
+    border-left: var(--border3);
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    animation: rotar3 1s linear forwards;
+    animation-delay: 3s;
+}
+
+@keyframes rotar1 {
+    100% {
+        transform: rotate(-25deg);
+    }
+}
+
+@keyframes rotar2 {
+    100% {
+        transform: rotate(-85deg);
+    }
+}
+
+@keyframes rotar3 {
+    100% {
+        transform: rotate(25deg);
+    }
+}
